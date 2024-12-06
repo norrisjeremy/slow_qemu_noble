@@ -34,6 +34,7 @@ COPY --link requirements.txt /app/requirements.txt
 ARG LC_ALL=C.UTF-8
 ARG LANG=C.UTF-8
 ARG TZ=UTC
+ARG QEMU_CPU=max
 ENV PATH=/app/venv/bin:${PATH}
 RUN <<EOF
 #!/bin/sh -eux
